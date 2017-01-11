@@ -1,0 +1,116 @@
+{
+  "project": "storage positioning system",
+  "description": "databank",
+  "team": "Weltenraum",
+  "contact": "Weltenraum@",
+  "contact-note": "all personal contacts should remain privatee and are stored somewhere else."
+  "option" : {
+    "condition": ["public", "documented", "instructed", "owner-only"],
+	"location": ["weltenraum", "lager", "mini-lager", "antennenwald"],
+	"location-condition": {
+	  "weltenraum": [public, documented, instructed],
+	  "lager": [public, documented, instructed, owner-only],
+	  "mini-lager": [public, documented, instructed, owner-only],
+	  "antennewald": [public, documented, instructed, owner-only]
+	}
+  }  
+  
+  "item": [
+    {
+      "type": "rtlsdr-dongle",
+      "description": "much funk, much wow, much ether",
+	  "owner": [
+	    "horn"
+	  ],
+	  "condition": "public",
+	  "instructor": [],
+	  "instructed": [],
+	  "contact": [
+	    "on box"
+	  ],
+	  "info": "http://shackspace.de/wiki",
+	  "location": {
+	    "place": "weltenraum",
+		"slot": "12",
+		"box": "funkbox"
+	  },
+	  "maintanance": [
+	    {
+		  "data": "2017-01-10",
+		  "by": "horn",
+		  "status": "shelved",
+		  "description": "initial"
+		}	  
+	  ],
+    },
+	{
+      "type": "blade-rf",
+      "description": "even mucher funk",
+	  "owner": [
+	    "horn",
+		"hornig"
+	  ],
+	  "condition": "instructed",
+	  "instructor": [
+	    "horn"
+	  ],
+	  "instructed": [
+	    "horn",
+		"hornig"
+	  ],
+	  "contact": [
+	    "@andreashornig",
+		"on box"
+	  ],
+	  "info": "http://shackspace.de/wiki",
+	  "location": {
+	    "place": "mini-lager",
+		"slot": "private",
+		"box": "private"
+	  },
+	  "maintanance": [
+	    {
+		  "data": "2017-01-10",
+		  "by": "horn",
+		  "status": "shelved",
+		  "description": "initial"
+		},
+        {
+		  "data": "2017-01-11",
+		  "by": "horn",
+		  "status": "fixed",
+		  "description": "was broken"
+		}		
+	  ],
+    }
+	{
+      "type": "2m-band-antenne",
+      "description": "brutzellll",
+	  "owner": [
+	    "horn"
+	  ],
+	  "condition": "instructed",
+	  "instructor": [
+	    "horn"
+	  ],
+	  "instructed": [],
+	  "contact": [
+	    "@andreashornig"
+	  ],
+	  "info": "http://shackspace.de/wiki",
+	  "location": {
+	    "place": "antennenwald",
+		"slot": "1",
+		"box": "private"
+	  },
+	  "maintanance": [
+	    {
+		  "data": "2017-01-10",
+		  "by": "horn",
+		  "status": "mounted",
+		  "description": "initial"
+		}		
+	  ],
+    }
+  ]
+}
